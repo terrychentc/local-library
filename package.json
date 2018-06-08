@@ -6,6 +6,9 @@
   "repository": {},
   "license": "ISC",
   "README":"",
+  "engines": {
+    "node": "6.14.2"
+  },
   "scripts": {
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www"

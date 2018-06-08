@@ -49,7 +49,7 @@ app.use(function(err, req, res, next) {
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://127.0.0.1:27017/local_library';
+var mongoDB = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/local_library';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
