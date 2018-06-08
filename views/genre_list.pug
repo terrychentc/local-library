@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title
+
+    ul
+    each genre_name in genre_list
+        li
+            if genre_name
+                span #{genre_name.name}
+
+    else
+        li There are no genres in this library.
